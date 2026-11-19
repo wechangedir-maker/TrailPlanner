@@ -1,0 +1,37 @@
+### Health check
+GET http://localhost:3000/api/health
+
+### List trips
+GET http://localhost:3000/api/trips
+
+### Create trip
+POST http://localhost:3000/api/trips
+Content-Type: application/json
+
+{
+  "title": "Weekend hike",
+  "description": "A beginner-friendly hiking trip",
+  "region": "Lake District",
+  "startDate": "2027-05-10T09:00:00.000Z",
+  "endDate": "2027-05-11T18:00:00.000Z",
+  "difficulty": "easy",
+  "maxParticipants": 8
+}
+
+
+### Get trip by ID
+GET http://localhost:3000/api/trips/1
+
+
+### Update trip
+PUT http://localhost:3000/api/trips/1
+Content-Type: application/json
+
+
+{
+  "maxParticipants": 12
+}
+
+
+### Delete trip
+DELETE http://localhost:3000/api/trips/1
